@@ -2,7 +2,9 @@
 package com.rest.people.data;
 
 import com.rest.people.domain.Person;
+
 import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.persistence.*;
 

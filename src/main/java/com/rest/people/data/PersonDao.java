@@ -2,6 +2,7 @@
 package com.rest.people.data;
 
 import com.rest.people.domain.Person;
+
 import java.util.List;
 
 public interface PersonDao {
