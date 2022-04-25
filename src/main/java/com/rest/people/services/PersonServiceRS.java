@@ -1,7 +1,7 @@
 
 package com.rest.people.services;
 
-import com.rest.people.data.PersonDaoImpl;
+import com.rest.people.data.PersonDao;
 import com.rest.people.domain.Person;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response.Status;
 public class PersonServiceRS {
 
     @Inject
-    private PersonDaoImpl personDao;
+    private PersonDao personDao;
     
     @GET
     @Produces(value = MediaType.APPLICATION_JSON)
