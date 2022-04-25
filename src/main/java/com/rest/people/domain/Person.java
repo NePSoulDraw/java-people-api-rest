@@ -5,10 +5,9 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({
-    @NamedQuery(name = "Person.getAllPeople", 
-                query = "SELECT p FROM Person p ORDER BY p.personId")
-})
+@Table(name = "people")
+@NamedQuery(name = "Person.getAllPeople", 
+            query = "SELECT p FROM Person p ORDER BY p.personId")
 public class Person implements Serializable{
 
     @Id
